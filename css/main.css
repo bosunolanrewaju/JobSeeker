@@ -1,0 +1,570 @@
+/******************************
+	FONTS
+*******************************/
+/*Avant Garde Gothic for buttons*/
+@font-face {
+	font-family: "Avant Garde Gothic";
+	src: url("../fonts/avgr45w.ttf");
+}
+
+/*Century Gothic for buttons in place of Avantgarde in IE*/
+@font-face {
+	font-family: "Century Gothic";
+	src: url("../fonts/Gothic.eot");
+	src: url("../fonts/Gothic.ttf");
+}
+
+/*Euphemia for body*/
+@font-face {
+	font-family: "Euphemia";
+	src: url("../fonts/euphemia.ttf");
+	src: url("../fonts/euphemia.svg");
+	src: url("../fonts/euphemia.eot");
+	src: url("../fonts/euphemia.woff");
+}
+
+/*Kalinga Bold for Heading*/
+@font-face {
+	font-family: "Kalinga Bold";
+	src: url("../fonts/kalingab.ttf");
+	src: url("../fonts/kalingab.eot");
+}
+
+
+
+
+/******************************
+	GENERAL STRUCTURE
+*******************************/
+html, body {
+
+}
+
+body {
+	font-family: "Source Sans Pro", Euphemia, sans-serif;
+	font-size: 20px;
+	-webkit-font-feature-settings: "liga", "dlig";
+	-moz-font-feature-settings: "liga", "dlig";
+	font-feature-settings: "liga", "dlig";
+	/*text-shadow: 0 1px 0px rgba(255,255,255, .6);*/
+	margin: 0px;
+}
+
+header {
+	background: url("../img/header-man.png") no-repeat 90% -90%, url("../img/head-bg.jpg") no-repeat center/cover;
+	width: 100%;
+}
+
+header nav {
+	width: 100%;
+	height: 54px;
+	top: 0;
+	background: rgba(255,255,255,.8);
+}
+
+section {
+	width: 100%;
+	background-color: rgb(245,245,245);
+}
+
+footer{
+	clear: both;
+	width: 100%;
+	height: 80px;
+	color: rgb(215,215,215);
+	background-color: rgb(50,50,50);
+	border-top: 4px solid rgb(0,140,0);
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/*Clearfix*/
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+/*Screen force hack :)*/
+.fixed-screen {
+	max-width: 1300px;
+	min-width: 1150px;
+}
+
+
+
+
+/******************************
+	HEADING
+*******************************/
+h1 {
+	font-family: "Kalinga Bold", Tahoma, sans-serif;
+	font-size: 2.5em;
+	margin: 10px 0px;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: normal;
+	font-weight: 300;
+	letter-spacing: 0.07em;
+}
+
+
+
+
+/******************************
+	LINKS
+*******************************/
+a, a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+/******************************
+	IMAGES
+*******************************/
+/*site logo*/
+.logo {
+	width: 230px;
+	height: 120px;
+	margin: 1% 6.5%;
+	float: left;
+	background: url("../img/logo.png") no-repeat top center/269px 134px;
+}
+
+/*partners logo*/
+section div.partners img {
+	padding: 2% 22%;
+	border: 1px solid rgb(230,230,230);
+	border-radius: 3px;
+	/*width: 100%;*/
+}
+
+
+
+
+
+
+/******************************
+	LIST
+*******************************/
+/*top nav bar*/
+header nav ul{
+	float: right;
+	list-style: none;
+	margin-right: 70px;
+	margin-top: 15px;
+}
+
+header nav ul li {
+	float: left;
+}
+
+
+header nav ul li a{
+	text-decoration: none;
+	color: rgb(50,50,50);
+	font-family: Tahoma, sans-serif;
+	font-size: 0.73em;
+	padding: 8px 10px;
+}
+
+header nav ul li a:hover{
+	background-color: rgb(250,250,250);
+	border-radius: 4px;
+	color: rgb(30,30,30);
+	text-decoration: none;
+}
+
+#sub-head-msg ul {
+	max-width: 560px;
+	text-align: center;
+	margin: 20px auto 0;
+	display: block;
+	font-size: 0.9em
+}
+
+
+#sub-head-msg ul li {
+	list-style: none;
+	padding-right: 1.2em;
+	float: left;
+}
+
+#sub-head-msg ul li span {
+	padding-right: 1.2em;
+	font-size: 1em;
+	font-family: Tahoma;
+}
+
+ul#how-ul {
+	margin: 10px auto 0px;
+	text-align: center;
+	max-width: 100%;
+}
+
+ul#how-ul li{
+	width: 15%;
+	float: left;
+	padding: 0 35px 0 80px;
+	background: url("../img/arrow-bullet.png") no-repeat 0% 25%;
+}
+
+ul#how-ul li:first-child{
+	padding: 0 45px 0 0px;
+	background: none;
+}
+
+ul#how-ul li p {
+	padding: 25px 0px;
+	background: none;
+	font-size: 0.97em;
+	line-height: 1.2em;
+}
+
+
+section div.partners ul {
+	max-width: 95% !important;
+}
+
+section div.partners li {
+	float: left;
+	width: 20%;
+	padding: 0 2.5%;
+}
+
+
+footer nav ul {
+	font-size: 0.6em;
+	width: 95%;
+	margin: 40px auto 0 auto;
+	font-weight: normal;
+}
+
+footer nav ul li {
+	float: left;
+	padding:0 5px;
+}
+
+
+
+/******************************
+	DIV & CONTAINER
+*******************************/
+/*Message in the header*/
+#head-msg, #sub-head-msg {
+	float: left;
+	margin: 70px 0px 30px 180px;
+	clear: left;
+	line-height: 1.7em;
+	font-size: 0.97em;
+}
+
+#sub-head-msg {
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	color: white;
+	text-shadow: none;
+	background-color: rgba(0,0,0, 0.7);
+	padding: 35px 0px;
+}
+
+button {
+	font-family: "Avantgarde Gothic", "Century Gothic", sans-serif;
+	padding: 10px 43px;
+	color: white;
+	font-size: 1.1em;
+	background-color: rgb(0,140,0);
+	border: none;
+	margin: 20px 0;
+}
+
+
+button:hover {
+	background-color: rgb(0,150,0);
+}
+
+button:focus, button:active {
+	border: none;
+	outline: none;
+}
+
+button:active {
+	background-color: rgb(0,120,0);
+}
+
+/*Section Divs*/
+section div, section div.partners ul {
+	max-width: 85%;
+	margin: 0px auto;
+	padding: 40px 0;
+	text-align: center;
+	color: rgb(120,120,120);
+}
+
+section div#how {
+	width: 100%;
+}
+
+section div h2, section div.get-started h1 {
+	font-size: 2.2em;
+	font-weight: 400;
+	padding: 40px 0;
+	color: inherit;
+}
+
+section div.get-started, section div.partners {
+	max-width: 100%;
+	margin: 0px;
+	line-height: 1.2em;
+	color: inherit;
+	background: url("../img/section-bg.jpg") no-repeat center/cover;
+}
+
+
+section div.get-started {
+	line-height: 2em;
+	color: rgb(0,0,0);
+}
+
+section div.get-started p {
+	font-size: 1.2em;
+}
+
+
+section div.partners {
+	background-color: rgb(255,255,255);
+	background-image: none;
+	color: rgb(120,120,120);
+	padding-top: 0px;
+}
+
+
+
+
+
+/******************************
+	MEDIA SCREEN
+*******************************/
+@media screen and (max-width: 1150px){
+
+	ul#how-ul li{
+		width: 20%;
+		float: left;
+		padding: 0px 3px 0 5px;
+		background: none;
+	}
+
+}
+
+
+@media screen and (max-width: 960px){
+	
+	header {
+		background: url("../img/header-man.png") no-repeat 90% 130%/350px 600px, url("../img/head-bg.jpg") no-repeat center ;
+	}
+
+
+	ul#how-ul li{
+		width: 130px;
+		float: left;
+		padding: 0px 3px 0 5px;
+		background: none;
+	}
+
+	ul#how-ul li:first-child{
+		padding: 0px 3px 0 5px;
+	}
+
+	section div.partners ul {
+		padding: 0px;
+	}
+	
+	section div.partners li {
+		float: left;
+		width: 40%;
+		padding: 2.5%;
+	}
+	
+	section div.partners img {
+		padding: 2% 16%;
+	}
+
+
+
+}
+
+
+@media screen and (max-width: 860px){
+	
+	#head-msg {
+			margin-left: 100px;
+		}
+
+	#sub-head-msg {
+		line-height: 2em;
+	}
+}
+
+
+@media screen and (max-width: 760px){
+	
+	header {
+		background: url("../img/head-bg.jpg") no-repeat center ;
+	}
+
+
+	ul#how-ul li{
+		font-size: 0.8em;
+	}
+
+	ul#how-ul li img{
+		width: 60%;
+	}
+
+}
+
+
+
+
+/*Small screen device*/
+@media screen and (max-width: 680px){
+	.logo {
+		margin: 4px auto;
+		float: none;
+	}
+
+	header {
+		background: rgb(240,240,240) url("../img/head-bg.jpg") no-repeat -500px 170px ;
+	}
+
+	header nav{
+		background-color: rgb(205,205,205);
+		background-image: none;
+		height: auto;
+		overflow: auto;
+		padding: 15px;
+	}
+
+	header nav ul {
+		max-width: 300px;
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 0px;
+	}
+
+	header nav ul li a:hover{
+		background-color: rgb(235,235,235);
+	}
+
+	#head-msg{
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+		width: 80%;
+		text-align: center;
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 560px){
+	#sub-head-msg ul{
+		width: 100%;
+	}
+
+	#sub-head-msg ul li span{
+			display: none;
+	}
+	#sub-head-msg ul li{
+		float: none;
+		font-size: 1.2em;
+		line-height: 1.5em;
+		list-style-type: square;
+	}
+}
+
+@media screen and (max-width: 480px){
+	
+	section div.partners img {
+		padding: 2% 10%;
+		border: none;
+	}
+
+}
+
+
+@media screen and (max-width: 360px){
+	body {
+		font-size: 0.9em;
+	}
+	header {
+		background-color: rgb(245,245,245);
+		background-image: none;
+	}
+
+	#head-msg{
+		margin-top: 20px;
+	}
+
+	#sub-head-msg{
+		padding: 20px 0;
+	}
+
+	section div {
+		padding: 0px;
+	}
+
+
+
+ul#how-ul {
+	margin-top : 10px;
+}
+
+ul#how-ul li{
+	width: 130px;
+	float: left;
+	padding: 0px 3px 0 5px;
+	background: none;
+}
+
+ul#how-ul li img{
+	/*width: 100%*/
+}
+
+ul#how-ul li:first-child{
+	padding: 0;
+	background: none;
+}
+
+ul#how-ul li p {
+	padding: 25px 0px;
+	background: none;
+	font-size: 0.97em;
+	line-height: 1.2em;
+}
+
+}
+
+
+
