@@ -220,22 +220,28 @@ ul#how-ul {
 }
 
 ul#how-ul li{
-	width: 15%;
+	width: 20%;
 	float: left;
-	padding: 0 35px 0 80px;
-	background: url("../img/arrow-bullet.png") no-repeat 0% 25%;
+	padding-left: 5%;
+	background: url("../img/arrow-bullet.png") no-repeat 10% 25%/ 20% auto;
 }
 
 ul#how-ul li:first-child{
-	padding: 0 45px 0 0px;
+	padding-left: 0;
 	background: none;
 }
+
+
 
 ul#how-ul li p {
 	padding: 25px 0px;
 	background: none;
-	font-size: 0.97em;
+	font-size: 1.97vw;
 	line-height: 1.2em;
+}
+
+ul#how-ul li img {
+	max-width: 60%;
 }
 
 
@@ -360,18 +366,15 @@ section div.partners {
 
 
 
+
 /******************************
 	MEDIA SCREEN
 *******************************/
-@media screen and (max-width: 1150px){
-
-	ul#how-ul li{
-		width: 20%;
-		float: left;
-		padding: 0px 3px 0 5px;
-		background: none;
+@media screen and (min-width: 1000px){
+	ul#how-ul li p {
+		font-size: 1em;
+		width: 80%;
 	}
-
 }
 
 
@@ -379,18 +382,6 @@ section div.partners {
 	
 	header {
 		background: url("../img/header-man.png") no-repeat 90% 130%/350px 600px, url("../img/head-bg.jpg") no-repeat center ;
-	}
-
-
-	ul#how-ul li{
-		width: 130px;
-		float: left;
-		padding: 0px 3px 0 5px;
-		background: none;
-	}
-
-	ul#how-ul li:first-child{
-		padding: 0px 3px 0 5px;
 	}
 
 	section div.partners ul {
@@ -430,14 +421,6 @@ section div.partners {
 		background: url("../img/head-bg.jpg") no-repeat center ;
 	}
 
-
-	ul#how-ul li{
-		font-size: 0.8em;
-	}
-
-	ul#how-ul li img{
-		width: 60%;
-	}
 
 }
 
@@ -502,6 +485,43 @@ section div.partners {
 		line-height: 1.5em;
 		list-style-type: square;
 	}
+
+
+	ul#how-ul  {
+		max-width: 320px;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		/*background: url("../img/arrow-bullet.png") no-repeat 10% 25%/ 20% auto;*/
+	}
+
+
+	ul#how-ul li, ul#how-ul li:first-child {
+		width: 100%;
+		float: left;
+		padding-left: 0;
+		padding-top: 60px;
+		background: url("../img/arrow-bullet-down.png") no-repeat 50% 30%/ auto 20% ;
+	}
+
+	ul#how-ul li:first-child {
+		padding-top: 0;
+		background: none;
+
+	}
+
+	ul#how-ul li img {
+		float: left;
+		width: 20vw;
+	}
+
+
+	ul#how-ul li p {
+		padding-top: 0.9em;
+		font-size: 3.2vw;
+		width: 80%;
+	}
+
 }
 
 @media screen and (max-width: 480px){
@@ -536,33 +556,42 @@ section div.partners {
 	}
 
 
+	ul#how-ul  {
+		max-width: 190px;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		/*background: url("../img/arrow-bullet.png") no-repeat 10% 25%/ 20% auto;*/
+	}
 
-ul#how-ul {
-	margin-top : 10px;
-}
 
-ul#how-ul li{
-	width: 130px;
-	float: left;
-	padding: 0px 3px 0 5px;
-	background: none;
-}
+	ul#how-ul li, ul#how-ul li:first-child {
+		width: 100%;
+		float: left;
+		padding-left: 0;
+		padding-top: 60px;
+		background: url("../img/arrow-bullet-down.png") no-repeat 50% 30%/ auto 20% ;
+	}
 
-ul#how-ul li img{
-	/*width: 100%*/
-}
+	ul#how-ul li:first-child {
+		padding-top: 0;
+		background: none;
 
-ul#how-ul li:first-child{
-	padding: 0;
-	background: none;
-}
+	}
 
-ul#how-ul li p {
-	padding: 25px 0px;
-	background: none;
-	font-size: 0.97em;
-	line-height: 1.2em;
-}
+	ul#how-ul li img {
+		float: left;
+		width: 20vw;
+	}
+
+
+	ul#how-ul li p {
+		padding-top: 0.9em;
+		font-size: 0.8em;
+		width: 50%;
+		float: left;
+	}
+
 
 }
 
